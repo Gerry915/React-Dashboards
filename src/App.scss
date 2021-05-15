@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.my-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.testing {
+  & p {
+    font-size: 1rem;
+    color: black;
+  }
+}
+
+.dashboard-one {
+  background-color: indigo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
