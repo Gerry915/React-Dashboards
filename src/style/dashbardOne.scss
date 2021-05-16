@@ -184,3 +184,11 @@ main {
   grid-area: detail;
   background-color: $dash-one-bg-darker-blue;
 }
+
+.credit {
+  & a {
+    padding-left: 0.5rem;
+    color: #000;
+    font-weight: 600;
+  }
+}
