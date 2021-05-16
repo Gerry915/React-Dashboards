@@ -1,0 +1,40 @@
+@import '../variable.scss';
+
+.content-card {
+  background-color: $dash-one-white;
+  box-shadow: 2px 0 25px $dash-one-shadow-blue;
+  padding: 1.5rem 2rem;
+  border-radius: 25px;
+  width: 220px;
+  position: relative;
+
+  & h3 {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
+  }
+
+  & p {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  & span {
+    padding-right: 0.2rem;
+  }
+
+  & button {
+    margin-top: 1.2rem;
+    margin-right: 1.2rem;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: translate3d(0, -10px, 0);
+  }
+}

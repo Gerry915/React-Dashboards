@@ -1,6 +1,23 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+@import 'style/variable.scss';
+
+html body {
+  // font-family: 'Farro', sans-serif;
+  // font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+img {
+  max-width: 100%;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.3rem; }
 
 .App-logo {
   height: 40vmin;
@@ -47,14 +64,4 @@
     font-size: 1rem;
     color: black;
   }
-}
-
-.dashboard-one {
-  background-color: indigo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  color: white;
 }

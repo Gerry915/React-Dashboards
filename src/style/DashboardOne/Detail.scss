@@ -1,0 +1,128 @@
+@import '../util.scss';
+@import '../variable.scss';
+
+.detail-col__login-pannel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  & > * {
+    margin-right: 2rem;
+  }
+
+  & a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.user-avatar {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid yellowgreen;
+  box-shadow: 0px 2px 35px rgba(49, 135, 171, 0.4);
+}
+
+.credit-card-wrapper {
+  background: $dash-one-black linear-gradient(149deg, rgba(255, 255, 255, 0.29) 0%, rgba(255, 255, 255, 0) 75%);
+  background-blend-mode: lighten;
+  width: 425px;
+  height: 277px;
+  border-radius: 30px;
+  color:  $dash-one-white;
+  padding: 2rem 2rem;
+  box-shadow: 0 15px 55px rgba(0, 0, 0, 0.4);
+  transform: translateX(80px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.chip-wrapper {
+  margin-bottom: 1rem;
+}
+
+.card-number-row {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.card-number-row__number {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.holder-name {
+  font-weight: 600;
+}
+
+.card-holder-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-content {
+  margin-top: 2rem;
+  padding-inline: 2rem;
+}
+
+.detail-row {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.type-icn {
+  background-color: white;
+  border-radius: 18px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+  & svg {
+    padding: 0.3rem;
+  }
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  padding-inline: 1rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.amount-wrapper {
+  & .amount {
+    padding-top: 0.2rem;
+    font-weight: 700;
+  }
+}
+
+.recent-content {
+  margin-top: 4rem;
+
+  & h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  & p {
+    margin-bottom: 0.5rem;
+  }
+}

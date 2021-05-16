@@ -1,0 +1,18 @@
+@import '../variable.scss';
+@import '../util.scss';
+
+.balance-header-area {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.amount-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
