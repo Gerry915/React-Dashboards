@@ -39,9 +39,34 @@
   border-radius: 30px;
   color:  $dash-one-white;
   padding: 2rem 2rem;
-  box-shadow: 0 15px 55px rgba(0, 0, 0, 0.4);
   transform: translateX(80px);
   border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.2s ease;
+  position: relative;
+  transition: transform, background, color, 0.2s ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 15px 55px rgba(0, 0, 0, 0.4);
+    transition: opacity 0.75s ease;
+  }
+
+  &:hover {
+    background: $dash-one-shadow-blue linear-gradient(149deg, rgba(0, 0, 0, 0.29) 0%, rgba(249, 249, 249, 0) 75%);
+    transform: translateX(0px);
+    color: $dash-one-black;
+  }
+
+  &:hover::after {
+    opacity: 0;
+  }
 }
 
 .chip-wrapper {

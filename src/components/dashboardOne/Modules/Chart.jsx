@@ -57,8 +57,20 @@ const cols = rawData.map((item) => {
       <div
         className="data-bar"
         style={{ height: `${(item.amount / 100000) * 100}%` }}
-      ></div>
-      <p className="text-grey">{item.month}</p>
+      >
+        <div className="mid-line">
+          <div className="amount-dot-wrapper">
+            <div className="dot">
+              <div className="callout">
+                <p>Expense</p>
+                <p><span>$</span>{ item.amount }</p>
+                <div className="callout__shape"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p className="month-label text-grey">{item.month}</p>
     </div>
   );
 });

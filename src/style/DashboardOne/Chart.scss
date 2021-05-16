@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   background-color: $dash-one-bg-darker-blue;
-  & p {
+  & > p {
     position: absolute;
     bottom: -2rem;
   }
@@ -34,6 +34,64 @@
   height: 0px;
   position: absolute;
   bottom: 0;
+  cursor: pointer;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    .amount-dot-wrapper {
+      opacity: 1;
+    }
+  }
+}
+
+.mid-line {
+  height: 100%;
+  width: 2px;
+  background-color: $dash-one-bg-darker-blue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.amount-dot-wrapper {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: $dash-one-black;
+  border: 3px solid $dash-one-white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.callout {
+  background-color: $dash-one-white;
+  transform: translateY(-50%) translateX(-110%);
+  min-width: 110px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0.5rem;
+  border: 1px solid $dash-one-black;
+}
+
+.callout__shape {
+  position: absolute;
+  border-top: 1px solid $dash-one-black;
+  border-right: 1px solid $dash-one-black;
+  transform: rotate(45deg) translateY(-50%);
+  top: 50%;
+  right: -2%;
+  width: 10px;
+  height: 10px;
+  background-color: $dash-one-white;
 }
 
 .marker {

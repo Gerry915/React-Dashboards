@@ -1,15 +1,15 @@
 import '../../../style/DashboardOne/History.scss';
 
-const HistoryRow = () => {
+const HistoryRow = (props) => {
   return (
     <div className="history-row">
       <div className="avatar">
-        <img src="https://picsum.photos/200/200" alt="avatar" />
+        <img src={ props.thumbnail } alt="avatar" />
       </div>
-      <p className="text-grey">Car Insurance</p>
-      <p className="text-grey">12:32:00 PM</p>
-      <p className="text-grey"><span>$</span>350</p>
-      <p className="text-grey">Completed</p>
+      <p className="text-grey">{ props.title }</p>
+      <p className="text-grey">{ props.time }</p>
+      <p className="text-grey"><span>$</span>{ props.amount }</p>
+      <p className="text-grey">{ props.status }</p>
     </div>
   )
 }
