@@ -84,7 +84,7 @@
 // MAIN CONTENT AREA
 // =================
 
-main {
+.main-content-area {
   height: 100vh;
   grid-area: content;
   padding: 5rem 3rem;
@@ -191,4 +191,14 @@ main {
     color: #000;
     font-weight: 600;
   }
+}
+
+.back-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 2rem;
+  left: 0;
 }

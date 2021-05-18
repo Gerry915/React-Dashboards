@@ -1,9 +1,12 @@
-import "../App.scss";
+import "../App.scss"
+import styles from "../style/Home.module.scss"
 
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <main className={styles['container']}>
+        <h1>Home</h1>
+      </main>
     </div>
   );
 };

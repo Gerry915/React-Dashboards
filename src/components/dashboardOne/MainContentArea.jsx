@@ -199,7 +199,7 @@ const MainContentArea = () => {
         <History />
       </div>
       <div className="credit text-grey">
-      Disclaimer: Design from: 
+      Disclaimer: Design from:
         <a href="https://dribbble.com/ghulaam-rasool" 
         rel="noreferrer" target="_blank">
           Ghulaam Rasool

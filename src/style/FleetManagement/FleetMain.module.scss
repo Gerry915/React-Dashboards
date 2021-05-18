@@ -1,0 +1,226 @@
+@import "../variable.scss";
+
+.fleet-main {
+  display: grid;
+  min-height: 100%;
+  background-color: white;
+  grid-template-columns: 300px auto;
+  row-gap: 0;
+  column-gap: 0;
+  grid-template-rows: 1fr;
+  padding-top: 60px;
+  overflow: scroll;
+}
+
+.side-bar {
+  color: $fleet-green;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+
+    & li:not(:last-of-type) {
+      text-transform: capitalize;
+      height: 75px;
+      background-color: transparent;
+      transition: background-color 0.2s ease;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        background-color: $fleet-accent;
+
+        .open-arrow {
+          transform: translateX(-5px);
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: $fleet-accent;
+      }
+    }
+
+    & li:last-of-type {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 2rem;
+
+      & button {
+        border: none;
+        background-color: $fleet-green;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.icn {
+  width: 28px;
+  height: 28px;
+  margin-right: 1rem;
+}
+
+.upgrade-img {
+  height: 200px;
+  width: 100%;
+  margin: 0 2rem;
+  background: url("../../icons/FleetManagement/upgrade.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.open-arrow {
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  background: url("../../icons/FleetManagement/right-arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: transform 0.25s ease-in-out;
+}
+
+.main-content {
+  background-color: $fleet-accent;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 0.7fr 1fr;
+  grid-template-rows: 73px 120px 1fr 1fr;
+  grid-template-areas:
+    "main-area-header main-area-header main-area-header main-area-header"
+    "main-row main-row main-row main-row"
+    "main-revenue main-revenue main-expense main-expense"
+    "main-performance main-performance main-env main-env";
+}
+
+@media (max-width: 1200px) {
+  .main-content {
+    grid-template-rows: 73px 240px auto auto;
+    grid-template-areas:
+      "main-area-header main-area-header main-area-header main-area-header"
+      "main-row main-row main-row main-row"
+      "main-revenue main-revenue main-revenue main-revenue"
+      "main-expense main-expense main-expense main-expense"
+      "main-performance main-performance main-performance main-performance"
+      "main-env main-env main-env main-env";
+  }
+}
+
+.main-revenue {
+  grid-area: main-revenue;
+}
+
+.main-row {
+  grid-area: main-row;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.row-item {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  background-color: white;
+  align-items: center;
+  margin-inline: 1rem;
+  flex-basis: 100%;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+
+  &:not(:first-of-type) {
+    margin-left: 0;
+  }
+
+  & h2 {
+    font-weight: 600;
+  }
+  & p {
+    font-weight: 600;
+    color: $fleet-green;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-row {
+    flex-wrap: wrap;
+  }
+  .row-item {
+    flex-basis: 45%;
+    margin-inline: auto;
+    &:not(:first-of-type) {
+      margin-left: auto;
+    }
+    margin-top: 1rem;
+  }
+}
+
+.row-content-wrapper {
+  flex-grow: 1;
+}
+
+.row-icn {
+  background-color: $fleet-accent;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.main-expense {
+  grid-area: main-expense;
+}
+.main-performance {
+  grid-area: main-performance;
+}
+.main-env {
+  grid-area: main-env;
+}
+
+.main-header {
+  grid-area: main-area-header;
+  background-color: white;
+}
+
+.main-panel {
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 1rem;
+  margin-inline: 1rem;
+  &:nth-child(even) {
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-panel {
+    margin: 1rem;
+    &:nth-child(even) {
+      margin-left: 1rem;
+    }
+  }
+}
