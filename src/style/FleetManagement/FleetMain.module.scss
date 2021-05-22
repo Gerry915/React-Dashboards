@@ -598,3 +598,17 @@
     }
   }
 }
+
+.upgrade-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & button {
+    margin-bottom: 1rem;
+  }
+
+  & p {
+    text-align: center;
+  }
+}

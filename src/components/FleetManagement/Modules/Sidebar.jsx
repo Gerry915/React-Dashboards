@@ -91,10 +91,9 @@ const Sidebar = () => {
           Settings
           <div className={styles["open-arrow"]}></div>
         </li>
-        <li>
-          {/* <div className={styles['upgrade-img']}>
-          </div> */}
+        <li className={ styles["upgrade-item"] }>
           <button>Upgrade</button>
+          <p>Original Design from: <a href="https://dribbble.com/Perhurovich">Yana Perhurovich</a></p>
         </li>
       </ul>
     </div>
