@@ -13,6 +13,9 @@ const Header = () => {
         <li>
           <a href="/fleet-management">Fleet Management</a>
         </li>
+        <li>
+          <a href="/project-dashboard">Project Dashboard</a>
+        </li>
       </ul>
     </header>
   );

@@ -27,8 +27,8 @@ const SideBar = () => {
 
       <ul className="side-bar-list">
         <li className="side-bar-list-item side-bar-tab-active">
-          <a href="http://123">
-            <div className="notification">1</div>
+          <a href="#1">
+            <div className="notification">28</div>
             <svg
               width="24"
               height="24"

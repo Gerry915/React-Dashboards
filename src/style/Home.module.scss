@@ -1,21 +1,22 @@
 .home {
   min-height: 100vh;
-  background-color: #E1F2FE;
+  background-color: #064789;
+  color: white;
+  padding-inline: 3vw;
 }
 
-.hero {
-  background-color: #0099ff;
-  min-height: 350px;
-  position: relative;
-  padding-inline: 3rem;
+main {
+  padding-top: 5rem;
 
-  & h1 {
-    padding-top: 10rem;
-    font-size: 4rem;
-    color: white;
+  h1 {
+    font-size: clamp(32px, 4vw, 7rem);
+    text-transform: uppercase;
   }
-}
 
-.content {
-  height: 100vh;
+  ul {
+    margin-top: 5rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
