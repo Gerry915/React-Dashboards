@@ -33,17 +33,18 @@
 
 .credit-card-wrapper {
   background: $dash-one-black linear-gradient(149deg, rgba(255, 255, 255, 0.29) 0%, rgba(255, 255, 255, 0) 75%);
-  background-blend-mode: lighten;
+  // background-blend-mode: lighten;
+  background-blend-mode: color-burn;
   width: 425px;
   height: 277px;
   border-radius: 30px;
   color:  $dash-one-white;
   padding: 2rem 2rem;
-  transform: translateX(80px);
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  transform: translateX(20px);
+  border: 3px solid rgba(255, 255, 255, 0.3);
   transition: box-shadow 0.2s ease;
   position: relative;
-  transition: transform, background, color, 0.2s ease;
+  transition: transform, background, color, 0.2s ease-in;
 
   &::after {
     content: '';
@@ -55,7 +56,7 @@
     height: 100%;
     width: 100%;
     box-shadow: 0 15px 55px rgba(0, 0, 0, 0.4);
-    transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease-out;
   }
 
   &:hover {

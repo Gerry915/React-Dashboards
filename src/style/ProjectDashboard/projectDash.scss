@@ -1,0 +1,11 @@
+@import '../util.scss';
+@import '../variable.scss';
+
+.dash-wrapper {
+  margin: 5vw;
+  padding: 0.5rem;
+  position: relative;
+  background: $project-linear-light;
+  border-radius: 25px;
+  display: flex;
+}

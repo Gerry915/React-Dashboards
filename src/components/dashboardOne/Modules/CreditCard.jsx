@@ -6,9 +6,9 @@ const CreditCard = () => {
       <div className="foreground">
         <div className="chip-wrapper">
           <svg
-            width="42"
-            height="42"
-            viewBox="0 0 42 42"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -29,8 +29,8 @@ const CreditCard = () => {
           <p>Card Holder</p>
           <div className="master-card">
             <svg
-              width="42"
-              height="42"
+              width="64"
+              height="64"
               viewBox="0 0 42 42"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,6 @@ const CreditCard = () => {
           <p className="holder-name">Gerry Gao</p>
         </div>
       </div>
-      <div className="background"></div>
     </div>
   );
 };
