@@ -1,5 +1,5 @@
-@import '../util.scss';
-@import '../variable.scss';
+@import "../util.scss";
+@import "../variable.scss";
 
 .dash-wrapper {
   margin: 5vw;
@@ -8,4 +8,65 @@
   background: $project-linear-light;
   border-radius: 25px;
   display: flex;
+}
+
+.dash-wrapper main {
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  input {
+    border-radius: 25px;
+    width: 400px;
+    padding-inline: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+  }
+}
+
+.user-profile {
+  display: flex;
+  gap: 20px;
+  padding-right: 2rem;
+
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid $project-theme;
+  }
+
+  h4, p {
+    color: $project-theme-dark;
+  }
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.summary-item {
+  padding: 0.75rem;
+  min-width: 150px;
+  h2 {
+    color: $project-theme-dark;
+  }
+}
+
+.summary-label {
+  font-weight: 600;
+}
+
+.dashboard-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-main__side {
+  min-width: 300px;
 }

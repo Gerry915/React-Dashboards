@@ -1,5 +1,6 @@
+import { UserProfile } from "components/ProjectDashbard/Modules/UserProfile";
 import { Analytics } from "components/ProjectDashbard/Sections/Analytics";
-import { Dashboard } from "components/ProjectDashbard/Sections/Dashboard";
+import { Dashboard } from "components/ProjectDashbard/Sections/Dashboard/Dashboard";
 import { Integrations } from "components/ProjectDashbard/Sections/Integrations";
 import { Messages } from "components/ProjectDashbard/Sections/Messages";
 import { Profile } from "components/ProjectDashbard/Sections/Profile";
@@ -75,7 +76,15 @@ const ProjectDashboard = () => {
     <div className="project-dash">
       <div className="dash-wrapper">
         <Sidebar items={listItem} selector={selector} />
-        <main>{renderMain()}</main>
+        <main>
+          <nav className="nav-bar">
+            <input type="text" placeholder="Search" />
+            <div className="user-profile">
+              <UserProfile />
+            </div>
+          </nav>
+          {renderMain()}
+        </main>
       </div>
     </div>
   );
